@@ -7,10 +7,6 @@ FILENAME=node-v$NODE_VERSION-linux-x64
 NODE_HOME=$WORKSPACE/$FILENAME
 NPMRC=/private/sni/.npmrc
 
-npm() {
-  /usr/bin/env npm --userconfig "$NPMRC" "$@"
-}
-
 # Make sure we are in the workspace
 cd "$WORKSPACE"
 
@@ -26,4 +22,3 @@ export PATH=$NODE_HOME/bin:$PATH
 #npm install -g npm@$NPM_VERSION
 
 npm version
-cat $NPMRC
