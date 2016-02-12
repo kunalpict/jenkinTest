@@ -1,10 +1,10 @@
 (function(){
 
   angular
-       .module('users')
-       .controller('UserController', [
-          'userService', '$mdSidenav', '$mdBottomSheet', '$log', '$q',
-          UserController
+       .module('recipes')
+       .controller('RecipesController', [
+          'recipesService', '$mdSidenav', '$mdBottomSheet', '$log', '$q',
+          RecipesController
        ]);
 
   /**
@@ -14,7 +14,7 @@
    * @param avatarsService
    * @constructor
    */
-  function UserController( userService, $mdSidenav, $mdBottomSheet, $log, $q) {
+  function RecipesController( recipesService, $mdSidenav, $mdBottomSheet, $log, $q) {
     var self = this;
 
     self.selected     = null;
@@ -25,10 +25,10 @@
 
     // Load all registered users
 
-    userService
+    recipesService
           .loadAllUsers()
           .then( function( users ) {
-            self.users    = [].concat(users);
+            self.users    = [].concat(users.data);
             self.selected = users[0];
           });
 
