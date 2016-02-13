@@ -73,25 +73,54 @@
         </md-card-actions>
       </md-card>
       
-      <div class="md-toolbar-tools">
-        <h3>
-          <span>Ingredients</span>
-        </h3>
-      </div>
-      <md-list>
-        <md-list-item 
-          ng-repeat="ingredient in ul.selected.ingredients">
-          <span>{{ingredient}}</span>
-        </md-list-item>
-      </md-list>
-      <md-content flex layout-padding>
-        <div ng-repeat="step in ul.selected.content">
-          <img ng-src="step.img" ng-if="step.img">
-          <p ng-if="step.text">{{step.text}}</p>
+        <div class="md-toolbar-tools">
+          <h3>
+            <span>Ingredients</span>
+          </h3>
+          <span flex></span>
+          <md-button class="md-raised" 
+          ng-if="ul.selected.edit.ingredient" 
+          ng-click="ul.selected.edit.ingredient = !ul.selected.edit.ingredient" aria-label="Learn More">
+            +
+          </md-button>
+          <md-button class="md-raised"
+           ng-if="!ul.selected.edit.ingredient" 
+           ng-click="ul.selected.edit.ingredient = !ul.selected.edit.ingredient" aria-label="Learn More">
+            EDIT
+          </md-button>
+          <md-button class="md-raised" 
+          ng-if="ul.selected.edit.ingredient" 
+          ng-click="ul.selected.edit.ingredient = !ul.selected.edit.ingredient" aria-label="Learn More">
+            SAVE
+          </md-button>
         </div>
+        <md-list>
+          <md-list-item 
+            ng-repeat="ingredient in ul.selected.ingredients">
+              <div layout-gt-sm="row" ng-if="ul.selected.edit.ingredient">
+                  <span class="md-block" flex-gt-sm>{{ingredient.name}}</span>
+                  <span class="md-block" flex-gt-sm>{{ingredient.qty}}</span>
+              </div>
+              <div layout-gt-sm="row" ng-if="!ul.selected.edit.ingredient">
+                <md-input-container class="md-block" flex-gt-sm>
+                  <label>name</label>
+                  <input ng-model="ingredient.name">
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt-sm>
+                  <label>qty</label>
+                  <input ng-model="ingredient.qty">
+                </md-input-container>
+              </div>
+          </md-list-item>
+        </md-list>
+        <md-content flex layout-padding>
+          <div ng-repeat="step in ul.selected.content">
+            <img ng-src="step.img" ng-if="step.img">
+            <p ng-if="step.text">{{step.text}}</p>
+          </div>
+        </md-content>
+       
       </md-content>
-     
-    </md-content>
 
   </div>
 

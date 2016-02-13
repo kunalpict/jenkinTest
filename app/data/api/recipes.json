@@ -2,12 +2,14 @@
   {
     "name": "Pani Puri",
     "category": "BreakFast,SNACKS",
-
+    "edit" : {
+    	"ingredient" : false
+    },
     "ingredients": [
-    "item -1",
-    "item -2",
-    "item -3",
-    "item -4"
+    {"name":"potatoes","qty":"2"},
+    {"name":"garlic/lahsun","qty":"1tsp"},
+    {"name":"mustard seeds/rai","qty":"2tsp"},
+    {"name":"asafoetida/hing","qty":"1pinch"}
     ],
     "images":{
       "icon": "./assets/svg/vada-pav.jpg",
