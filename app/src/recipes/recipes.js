@@ -2,7 +2,7 @@
   'use strict';
 
   // Prepare the 'users' module for subsequent registration of controllers and delegates
-  angular.module('recipes', [ 'ngMaterial' ]);
+  angular.module('recipes', [ 'ngMaterial' , 'signIn' ]);
 
 
 })();

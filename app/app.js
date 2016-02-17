@@ -1,4 +1,4 @@
 (function(angular){
 	angular
-        .module('MyRecipeApp', ['ngMaterial', 'recipes']);
+        .module('MyRecipeApp', ['ngMaterial', 'recipes','recipe']);
 })(angular);

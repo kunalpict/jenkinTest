@@ -1,61 +1,56 @@
 <!DOCTYPE html>
-<html lang="en" >
-  <head>
-    <title>Angular Material - Starter App</title>
+<html lang="en">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
-    <link rel="stylesheet" href="./bower_components/angular-material/angular-material.css"/>
-    <link rel="stylesheet" href="assets/app.css"/>
-
-    <style type="text/css">
-        /**
+<head>
+  <title>Angular Material - Starter App</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
+  <link rel="stylesheet" href="./bower_components/angular-material/angular-material.css" />
+  <link rel="stylesheet" href="assets/app.css" />
+  <style type="text/css">
+  /**
          * Hide when Angular is not yet loaded and initialized
          */
-        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-          display: none !important;
-        }
-    </style>
+  
+  [ng\:cloak],
+  [ng-cloak],
+  [data-ng-cloak],
+  [x-ng-cloak],
+  .ng-cloak,
+  .x-ng-cloak {
+    display: none !important;
+  }
+  </style>
+</head>
 
-  </head>
-
-  <body ng-app="MyRecipeApp" layout="row" ng-controller="RecipesController as ul" ng-cloak >
-
-  <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2"
-                md-component-id="left"
-                md-is-locked-open="$mdMedia('gt-sm')">
-
+<body ng-app="MyRecipeApp" layout="row" ng-controller="RecipesController as ul" ng-cloak>
+  <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
     <md-toolbar class="md-whiteframe-z1">
       <h1>Persons</h1>
     </md-toolbar>
-
     <md-list>
       <md-list-item ng-repeat="it in ul.users">
-          <md-button ng-click="ul.selectUser(it)" ng-class="{'selected' : it === ul.selected }">
-            <md-icon md-svg-icon="{{it.images.icon}}" class="avatar"></md-icon>
-            {{it.name}}
-          </md-button>
+        <md-button ng-click="ul.selectUser(it)" ng-class="{'selected' : it === ul.selected }">
+          <md-icon md-svg-icon="{{it.images.icon}}" class="avatar"></md-icon>
+          {{it.name}}
+        </md-button>
       </md-list-item>
     </md-list>
-
   </md-sidenav>
-
-
   <div flex layout="column" tabIndex="-1" role="main" class="md-whiteframe-z2">
-
     <md-toolbar layout="row" class="md-whiteframe-z1">
       <md-button class="menu" hide-gt-sm ng-click="ul.toggleList()" aria-label="Show User List">
-        <md-icon md-svg-icon="menu" ></md-icon>
+        <md-icon md-svg-icon="menu"></md-icon>
       </md-button>
       <h1>My Recipe Book - Starter App</h1>
+      <span flex></span>
+      <signin-dialog></signin-dialog>
     </md-toolbar>
-
     <md-content flex id="content">
-       <md-card>
+      <md-card>
         <md-card-title>
           <md-card-title-text>
             <span class="md-headline">{{ul.selected.name}}</span>
@@ -72,67 +67,60 @@
           <md-button>Action 2</md-button>
         </md-card-actions>
       </md-card>
-      
-        <div class="md-toolbar-tools">
-          <h3>
+      <div class="md-toolbar-tools">
+        <h3>
             <span>Ingredients</span>
           </h3>
-          <span flex></span>
-          <md-button class="md-raised" 
-          ng-if="ul.selected.edit.ingredient" 
-          ng-click="ul.selected.edit.ingredient = !ul.selected.edit.ingredient" aria-label="Learn More">
-            +
-          </md-button>
-          <md-button class="md-raised"
-           ng-if="!ul.selected.edit.ingredient" 
-           ng-click="ul.selected.edit.ingredient = !ul.selected.edit.ingredient" aria-label="Learn More">
-            EDIT
-          </md-button>
-          <md-button class="md-raised" 
-          ng-if="ul.selected.edit.ingredient" 
-          ng-click="ul.selected.edit.ingredient = !ul.selected.edit.ingredient" aria-label="Learn More">
-            SAVE
-          </md-button>
-        </div>
-        <md-list>
-          <md-list-item 
-            ng-repeat="ingredient in ul.selected.ingredients">
-              <div layout-gt-sm="row" ng-if="ul.selected.edit.ingredient">
-                  <span class="md-block" flex-gt-sm>{{ingredient.name}}</span>
-                  <span class="md-block" flex-gt-sm>{{ingredient.qty}}</span>
-              </div>
-              <div layout-gt-sm="row" ng-if="!ul.selected.edit.ingredient">
-                <md-input-container class="md-block" flex-gt-sm>
-                  <label>name</label>
-                  <input ng-model="ingredient.name">
-                </md-input-container>
-                <md-input-container class="md-block" flex-gt-sm>
-                  <label>qty</label>
-                  <input ng-model="ingredient.qty">
-                </md-input-container>
-              </div>
-          </md-list-item>
-        </md-list>
-        <md-content flex layout-padding>
-          <div ng-repeat="step in ul.selected.content">
-            <img ng-src="step.img" ng-if="step.img">
-            <p ng-if="step.text">{{step.text}}</p>
+        <span flex></span>
+        <md-button class="md-raised" ng-if="ul.selected.edit.ingredient" ng-click="ul.selected.edit.ingredient = !ul.selected.edit.ingredient" aria-label="Learn More">
+          +
+        </md-button>
+        <md-button class="md-raised" ng-if="!ul.selected.edit.ingredient" ng-click="ul.selected.edit.ingredient = !ul.selected.edit.ingredient" aria-label="Learn More">
+          EDIT
+        </md-button>
+        <md-button class="md-raised" ng-if="ul.selected.edit.ingredient" ng-click="ul.selected.edit.ingredient = !ul.selected.edit.ingredient" aria-label="Learn More">
+          SAVE
+        </md-button>
+      </div>
+      <md-list>
+        <md-list-item ng-repeat="ingredient in ul.selected.ingredients">
+          <div layout-gt-sm="row" ng-if="ul.selected.edit.ingredient">
+            <span class="md-block" flex-gt-sm>{{ingredient.name}}</span>
+            <span class="md-block" flex-gt-sm>{{ingredient.qty}}</span>
           </div>
-        </md-content>
-       
+          <div layout-gt-sm="row" ng-if="!ul.selected.edit.ingredient">
+            <md-input-container class="md-block" flex-gt-sm>
+              <label>name</label>
+              <input ng-model="ingredient.name">
+            </md-input-container>
+            <md-input-container class="md-block" flex-gt-sm>
+              <label>qty</label>
+              <input ng-model="ingredient.qty">
+            </md-input-container>
+          </div>
+        </md-list-item>
+      </md-list>
+      <md-content flex layout-padding>
+        <div ng-repeat="step in ul.selected.content">
+          <img ng-src="step.img" ng-if="step.img">
+          <p ng-if="step.text">{{step.text}}</p>
+        </div>
       </md-content>
-
+    </md-content>
   </div>
+  <script src="./bower_components/angular/angular.js"></script>
+  <script src="./bower_components/angular-animate/angular-animate.js"></script>
+  <script src="./bower_components/angular-aria/angular-aria.js"></script>
+  <script type="text/javascript" src="./bower_components/angular-material/angular-material.js"></script>
+  <script src="./app.js"></script>
+  <script src="./app-config.js"></script>
+  <script src="./app-route.js"></script>
+  <script src="./src/recipes/recipes.js"></script>
+  <script src="./src/recipes/recipes-controller.js"></script>
+  <script src="./src/recipes/recipes-service.js"></script>
+  <script src="./src/signin/signin.js"></script>
+  <script src="./src/recipes/recipes-directive.js"></script>
+  <script src="./src/detail/recipe-detail.js"></script>
+</body>
 
-    <script src="./bower_components/angular/angular.js"></script>
-    <script src="./bower_components/angular-animate/angular-animate.js"></script>
-    <script src="./bower_components/angular-aria/angular-aria.js"></script>
-    <script type="text/javascript" src="./bower_components/angular-material/angular-material.js"></script>
-    <script src="./app.js"></script>
-    <script src="./app-config.js"></script>
-    <script src="./app-route.js"></script>
-    <script src="./src/recipes/recipes.js"></script>
-    <script src="./src/recipes/recipes-controller.js"></script>
-    <script src="./src/recipes/recipes-service.js"></script>
-  </body>
 </html>

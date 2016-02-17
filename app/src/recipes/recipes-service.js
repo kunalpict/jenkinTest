@@ -1,13 +1,13 @@
-(function(){
+(function() {
   'use strict';
 
   angular.module('recipes')
-         .service('recipesService', ['$http', RecipesService]);
+    .service('recipesService', ['$http', RecipesService]);
 
-  function RecipesService($http){
+  function RecipesService($http) {
     // Promise-based API
     return {
-      loadAllUsers : function() {
+      loadAllUsers: function() {
         // Simulate async nature of real remote calls
         return $http.get("data/api/recipes.json");
       }

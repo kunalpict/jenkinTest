@@ -25,7 +25,114 @@
     	"text":"I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire."},
     {"text":"I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire."}
     ]
+  },{
+    "name": "Pani Puri",
+    "category": "BreakFast,SNACKS",
+    "edit" : {
+        "ingredient" : false
+    },
+    "ingredients": [
+    {"name":"potatoes","qty":"2"},
+    {"name":"garlic/lahsun","qty":"1tsp"},
+    {"name":"mustard seeds/rai","qty":"2tsp"},
+    {"name":"asafoetida/hing","qty":"1pinch"}
+    ],
+    "images":{
+      "icon": "./assets/svg/vada-pav.jpg",
+      "icon-lg": "./assets/svg/vada-pav.jpg"
+    },
+    "content": [
+    {
+        "text":"I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire."
+    },
+    {"text":"I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire."},
+    {
+        "img" :"./assets/svg/vada-pav.jpg",
+        "text":"I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire."},
+    {"text":"I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire."}
+    ]
   },
+  {
+    "name": "Pani Puri",
+    "category": "BreakFast,SNACKS",
+    "edit" : {
+        "ingredient" : false
+    },
+    "ingredients": [
+    {"name":"potatoes","qty":"2"},
+    {"name":"garlic/lahsun","qty":"1tsp"},
+    {"name":"mustard seeds/rai","qty":"2tsp"},
+    {"name":"asafoetida/hing","qty":"1pinch"}
+    ],
+    "images":{
+      "icon": "./assets/svg/vada-pav.jpg",
+      "icon-lg": "./assets/svg/vada-pav.jpg"
+    },
+    "content": [
+    {
+        "text":"I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire."
+    },
+    {"text":"I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire."},
+    {
+        "img" :"./assets/svg/vada-pav.jpg",
+        "text":"I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire."},
+    {"text":"I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire."}
+    ]
+  },
+  {
+    "name": "Pani Puri",
+    "category": "BreakFast,SNACKS",
+    "edit" : {
+        "ingredient" : false
+    },
+    "ingredients": [
+    {"name":"potatoes","qty":"2"},
+    {"name":"garlic/lahsun","qty":"1tsp"},
+    {"name":"mustard seeds/rai","qty":"2tsp"},
+    {"name":"asafoetida/hing","qty":"1pinch"}
+    ],
+    "images":{
+      "icon": "./assets/svg/vada-pav.jpg",
+      "icon-lg": "./assets/svg/vada-pav.jpg"
+    },
+    "content": [
+    {
+        "text":"I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire."
+    },
+    {"text":"I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire."},
+    {
+        "img" :"./assets/svg/vada-pav.jpg",
+        "text":"I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire."},
+    {"text":"I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire."}
+    ]
+  },{
+    "name": "Pani Puri",
+    "category": "BreakFast,SNACKS",
+    "edit" : {
+        "ingredient" : false
+    },
+    "ingredients": [
+    {"name":"potatoes","qty":"2"},
+    {"name":"garlic/lahsun","qty":"1tsp"},
+    {"name":"mustard seeds/rai","qty":"2tsp"},
+    {"name":"asafoetida/hing","qty":"1pinch"}
+    ],
+    "images":{
+      "icon": "./assets/svg/vada-pav.jpg",
+      "icon-lg": "./assets/svg/vada-pav.jpg"
+    },
+    "content": [
+    {
+        "text":"I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire."
+    },
+    {"text":"I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire."},
+    {
+        "img" :"./assets/svg/vada-pav.jpg",
+        "text":"I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire."},
+    {"text":"I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire."}
+    ]
+  }
+  ,
    {
     "name": "Vada Paav",
     "category": "BreakFast,SNACKS",
